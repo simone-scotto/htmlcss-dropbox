@@ -4,17 +4,165 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+   
+
+}
+ :root {
+    font-family: Whitney,'Helvetica Neue', Arial, Helvetica, sans-serif;
+ }
+/* common*/
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
+header {
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
 .debug {
-    border: 1px solid black;
+    
+
+    * {
+         border: 1px solid black;
+    }
+    
+    .col_4 {
+        width: calc(100% / 12 *4);
+         padding: 1rem;
+         min-height: 500px;
+
+               
+    } 
+            
+    .col_1 {
+        width: calc(100% / 12 * 12);
+        min-height: 100px;
+                
+    }
+
+    .card {
+        height: 100%;
+    }
+
+    .meeting {
+            min-height: 300px;
+        }
+
+    
+    footer {
+        min-height: 200px;
+
+        .container {
+            
+           
+            .list {
+                background-color: green;
+                min-height: 200px;
+
+            }
+        }
+    }
+    
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
+    }
+
+    .left {
+    display: flex;
+    }
+
+    /*jumbo*/
+
+.hero {
+    background-color: #0061fe;
+    min-height: 400px;
+
+    .jumbo {
+        padding: 2rem 0;
+    }
+
+        .flex {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        min-height: 300px;
+
+            .text {
+                width: 33%;
+
+            }
+        
+            .img {
+                width: 66%;
+            }
+
+    }
 }
 
-.left_menu {
-    display: flex;
+/*business*/
+
+
+    /*cards*/
+
+     .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem;
+
+            .col_4 {
+                width: calc(100% / 12 *4);
+                padding: 1rem;
+
+               
+            } 
+            
+            .col_1 {
+                width: calc(100% / 12 * 12);
+                padding: 1rem;
+            }
+        }
+
+
+        /*partner*/
+
+.meeting {
+
+    margin: 2rem 0;
+
+     .flex {
+        display: flex;
+        width: 100%;
+        min-height: 300px;
+
+            .text {
+                width: 33%;
+
+            }
+        
+            .img {
+                width: 66%;
+            }
+
+    }
+
+    
+}
+
+
+/*footer*/
+
+footer {
+    background-color: black;
 }
