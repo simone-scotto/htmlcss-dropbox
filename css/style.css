@@ -31,7 +31,9 @@ h3 {
 
 }
 
-
+.spacing {
+    padding: 6rem 0;
+}
 
 
 li {
@@ -122,6 +124,11 @@ i {
 
 header {
     padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid;
     
 }
 .navbar {
@@ -390,12 +397,14 @@ hr {
 
 .operation {
 
-    
+    h2 {
+        padding-bottom: 2rem;
+    }
                 
 
-                h3 {
-                    padding-bottom: 1rem;
-                }
+        h3 {
+            padding-bottom: 1rem;
+        }
                         
 }
 
@@ -411,15 +420,27 @@ hr {
 
 /*footer*/
 
-footer {
+.footer {
     background-color: black;
     color: white;
+    padding-bottom: 2rem;
+
 
     .container {
         width: 60%;
+
+        .len {
+            font-size: 0.8rem;
+
+            i {
+                margin: 0;
+            }
+        }
     }
 }
-
+.fa-sort-up {
+    vertical-align: sub;
+}
 
 .foot_row {
     display: flex;
@@ -444,6 +465,7 @@ footer {
 .foot_hr  {
     color: lightgray;
     width: 5rem;
+    margin-bottom: 2rem;
  }
 
 
