@@ -16,14 +16,27 @@
  }
 
 .container {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     max-width: 1200px;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    
+    font-size: 1.3rem;
+
+}
+
+
+
 
 li {
     list-style: none;
+    padding-bottom: 1rem;
 }
 
 
@@ -35,6 +48,24 @@ section {
     padding: 4rem 0 0;
 }
 
+.border {
+        border: 1px solid grey;
+}
+
+
+i {
+    margin-right: 0.5rem;
+}
+
+.blu-btn {
+    background-color: blue;
+    
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
 /*debug*/
 
 .debug {
@@ -93,12 +124,18 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
-    }
 
-    .left {
-    display: flex;
-    }
+        a {
+            text-decoration: none;
+        }
 
+        .left {
+        display: flex;
+        }
+
+}
+
+    
     /*jumbo*/
 
 h1  {
@@ -151,6 +188,11 @@ h1  {
     }
 }
 
+.hero > .container {
+    width: 60%;
+}
+
+
 /*business*/
 
 
@@ -159,50 +201,100 @@ h1  {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 2rem;
+    margin: 2rem -1rem;
 
         .col_4 {
             width: calc(100% / 12 *4);
-            padding: 1rem;
+            padding: 0 1rem;
+            
+            font-size: 0.8rem;
+
+            
+        
+            
+
+                .card_head {
+                    text-align: center;
+                    padding: 1rem;
+                    border-bottom: 1px solid grey;
+                    
+                    font-weight: 500;
+                    
+
+                }
+
+                .card_body {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    padding: 2rem 1rem;
+
+            
+                    .pricing {
+                        display: flex;
+                        flex-direction: column;
+
+                        .price {
+                            font-weight: 700;
+                        }
+
+                        
+                        .time_fraction {
+                            padding-bottom: 2rem;
+                            color: gray;
+                        } 
+                    
+                    }
+
+                }
+            
 
                
         } 
             
+        
+        
+
+            
+        }
+        
         .col_1 {
-            width: calc(100% / 12 * 12);
+            width: calc(100% / 12 * 12);           
             padding: 1rem;
+            font-size: 0.8rem;
+
+
+                .card {
+                    border: 1px solid grey;
+                }
+            
+                
+
+                    .card_head {
+                        text-align: center;
+                        padding: 1rem;
+                        border-bottom: 1px solid grey;
+                        font-weight: 500;
+                    }
+
+                    .card_body {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 1rem 1rem 0;
+                    }
+                     .card_foot {
+                        padding: 0rem 1rem;
+                        
+
+                     }
+
+                    p {
+                        padding: 1.5rem 0;
+                    }
         }
         
 
-        .card_body {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            padding: 2rem 0;
 
-        
-            .pricing {
-                display: flex;
-                flex-direction: column;
-
-                h3 {
-                    margin-bottom: 1rem;
-                }
-
-                .time_fraction {
-                    padding-bottom: 2rem;
-                } 
-                
-                
-
-            }
-
-            .trial-btn {
-                    display: block;
-                    text-align: center;
-            }
-
-        }        
         .card_body > div > * {
             padding: 1rem 0;
 
@@ -213,6 +305,16 @@ h1  {
             padding: 1rem 0;
         }
 
+        .trial-btn {
+            display: block;
+            text-align: center;
+            
+        }
+
+        .buy-now {
+            padding-left: 0.5rem;
+        }
+
         
             
     
@@ -220,6 +322,16 @@ h1  {
 }
 
 
+.fa-check {
+    color: blue;
+    font-size: 1rem;
+}
+
+
+hr {
+    width: 5rem;
+
+}
 
         /*partner*/
 
@@ -230,11 +342,15 @@ h1  {
      .flex {
         display: flex;
         width: 100%;
+        justify-content: center;
+        gap: 2rem;
         min-height: 300px;
 
             .text {
                 width: 33%;
+                margin-top: 2rem;
 
+                
             }
         
             .img {
@@ -246,9 +362,31 @@ h1  {
     
 }
 
+.text > * {
+    padding: 1rem 0;
 
+}
+
+
+/*operation*/
+
+.operation {
+
+    
+                
+
+                h3 {
+                    padding-bottom: 1rem;
+                }
+                        
+}
 /*footer*/
 
 footer {
     background-color: black;
 }
+
+
+
+
+
