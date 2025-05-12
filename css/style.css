@@ -48,6 +48,12 @@ section {
     padding: 4rem 0 0;
 }
 
+
+.card {
+        height: 100%;
+}
+
+
 .border {
         border: 1px solid grey;
 }
@@ -58,7 +64,7 @@ i {
 }
 
 .blu-btn {
-    background-color: blue;
+    background-color: #0061fe;
     
 }
 
@@ -78,21 +84,18 @@ i {
     .col_4 {
         width: calc(100% / 12 *4);
          padding: 1rem;
-         min-height: 500px;
+         
 
                
     } 
             
     .col_1 {
         width: calc(100% / 12 * 12);
-        min-height: 100px;
+        
                 
     }
 
-    .card {
-        height: 100%;
-    }
-
+    
     .meeting {
             min-height: 300px;
         }
@@ -144,7 +147,7 @@ h1  {
 }
 
 .hero {
-    background-color: #0061fe;
+    background-color: #b4d0e6;
     min-height: 400px;
 
     .jumbo {
@@ -198,14 +201,15 @@ h1  {
 
     /*cards*/
 
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 2rem -1rem;
+    margin: 0rem -1rem;
 
         .col_4 {
             width: calc(100% / 12 *4);
-            padding: 0 1rem;
+            padding: 2rem 1rem;
             
             font-size: 0.8rem;
 
@@ -308,6 +312,7 @@ h1  {
         .trial-btn {
             display: block;
             text-align: center;
+            text-decoration: none;
             
         }
 
@@ -315,11 +320,7 @@ h1  {
             padding-left: 0.5rem;
         }
 
-        
-            
-    
 
-}
 
 
 .fa-check {
@@ -333,6 +334,23 @@ hr {
 
 }
 
+.timing {
+    padding: 2rem 0;
+
+    
+
+}
+
+.timing > * {
+    padding-right: 1rem;
+
+    
+}
+
+
+.time_fraction.no_display {
+    visibility: hidden;
+}
         /*partner*/
 
 .meeting {
@@ -380,13 +398,52 @@ hr {
                 }
                         
 }
+
+.card_foot {
+    padding: 4rem 0;
+
+    a {
+        margin-top: 2rem;
+        display: block;
+    }
+}
+
+
 /*footer*/
 
 footer {
     background-color: black;
+    color: white;
+
+    .container {
+        width: 60%;
+    }
 }
 
 
+.foot_row {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
 
+    .col_2 {
+
+        width: calc(100% / 12 * 2);
+
+        h3 {
+
+            margin-bottom: 1rem;
+        }
+
+        ul > li {
+            font-size: 0.8rem;
+        }
+    }
+
+}
+.foot_hr  {
+    color: lightgray;
+    width: 5rem;
+ }
 
 
